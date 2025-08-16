@@ -1,0 +1,132 @@
+body {
+  background: linear-gradient(120deg, #fff4e6 0%, #fbe8d3 100%);
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  color: #59361b;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 48px auto;
+  background: #fff8f3;
+  box-shadow: 0 6px 32px rgba(120, 72, 24, 0.10);
+  border-radius: 22px;
+  padding: 44px 36px;
+}
+
+h1, h2 {
+  color: #d2691e;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 26px;
+  background: #fff6ec;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(180, 100, 40, 0.06);
+}
+
+th, td {
+  padding: 15px 18px;
+  text-align: left;
+}
+
+th {
+  background: #fbbf77;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+tr {
+  transition: background 0.2s;
+}
+
+tr:hover {
+  background: #ffe7c2;
+}
+
+button, .btn {
+  background: linear-gradient(90deg, #ffb866 0%, #e96e43 100%);
+  color: #fff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  transition: background 0.23s, transform 0.18s;
+  box-shadow: 0 2px 8px rgba(220, 110, 60, 0.07);
+}
+
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #e96e43 0%, #ffb866 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+input, select, textarea {
+  padding: 12px;
+  border-radius: 7px;
+  border: 1.5px solid #ffd1a1;
+  margin: 10px 0 18px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff9f3;
+  transition: border 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #e96e43;
+  background: #fff4e6;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #a55d2a;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #ffe7c2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffb866;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .app-container {
+    padding: 16px 2vw;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+  th, td {
+    padding: 11px 5px;
+  }
+}
